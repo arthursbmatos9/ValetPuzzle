@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14c7b5054c82f91429ff5d04ebef985b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 199b5564806d2774e85adfcd68bc96ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3719,6 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: 
+  restart: 
   painelMenuInicial: {fileID: 0}
   painelConfig: {fileID: 0}
   painelComo: {fileID: 0}
@@ -3735,6 +3736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: 
+  restart: 
   painelMenuInicial: {fileID: 0}
   painelConfig: {fileID: 0}
   painelComo: {fileID: 0}
@@ -5250,7 +5252,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 680390471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1480701365}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &680390471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13826,6 +13840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: MainMenu
+  restart: SampleScene
   painelMenuInicial: {fileID: 1238064828}
   painelConfig: {fileID: 1378170872}
   painelComo: {fileID: 0}
@@ -13858,12 +13873,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2667501e670f1a40a7f84f1b5fcff86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDistance: 1
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   minX: -5
   maxX: 5
   minY: -5
   maxY: 5
+  moveSpeed: 5
 --- !u!4 &1487566263
 Transform:
   m_ObjectHideFlags: 0
@@ -16566,6 +16581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: 
+  restart: 
   painelMenuInicial: {fileID: 0}
   painelConfig: {fileID: 0}
   painelComo: {fileID: 0}
@@ -18561,10 +18577,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 541067749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -0.4261, y: -59.856003}
+  m_SizeDelta: {x: 174, y: -32.288}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078732763
 MonoBehaviour:
@@ -18579,6 +18595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: 
+  restart: 
   painelMenuInicial: {fileID: 0}
   painelConfig: {fileID: 0}
   painelComo: {fileID: 0}
@@ -18595,6 +18612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: 
+  restart: 
   painelMenuInicial: {fileID: 0}
   painelConfig: {fileID: 0}
   painelComo: {fileID: 0}
@@ -18618,7 +18636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Movimentos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18681,7 +18699,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -70.095955, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

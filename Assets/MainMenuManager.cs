@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private string nomeDoLevelDeJogo;
+
+    [SerializeField] private string restart;
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelConfig;
     [SerializeField] private GameObject painelComo;
@@ -13,6 +15,11 @@ public class MainMenuManager : MonoBehaviour
     public void Jogar()
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(restart);
     }
 
     public void AbrirConfig()
